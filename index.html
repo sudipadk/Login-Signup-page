@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- Coding By Sudip Adhikari. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== Material Icons CSS ===== -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+         
+    <title>Login & Registration Form</title> 
+</head>
+<body>
+    
+<!-- Main Container -->
+<div class="container">
+    <!-- Forms Container -->
+    <div class="forms">
+
+        <!-- Login Form -->
+        <div class="form login">
+            <!-- Login Title -->
+            <span class="title">Login</span>
+
+            <!-- Login Form Fields -->
+            <form action="#">
+                <!-- Email Input -->
+                <div class="input-field">
+                    <input type="text" placeholder="Enter your email" required>
+                    <i class="material-icons">mail</i>
+                </div>
+
+                <!-- Password Input with Show/Hide Icon -->
+                <div class="input-field">
+                    <input type="password" class="password" placeholder="Enter your password" required>
+                    <i class="material-icons">lock</i>
+                    <i class="material-icons showHidePw">remove_red_eye</i>
+                </div>
+
+                <!-- Remember Me Checkbox and Forgot Password Link -->
+                <div class="checkbox-text">
+                    <div class="checkbox-content">
+                        <input type="checkbox" id="logCheck">
+                        <label for="logCheck" class="text">Remember me</label>
+                    </div>
+                    <a href="#" class="text">Forgot password?</a>
+                </div>
+
+                <!-- Login Button -->
+                <div class="input-field button">
+                    <input type="button" value="Login">
+                </div>
+            </form>
+
+            <!-- Signup Link for Login Form -->
+            <div class="login-signup">
+                <span class="text">Not a member?
+                    <a href="#" class="text signup-link">Signup Now</a>
+                </span>
+            </div>
+        </div>
+
+
+
+        <!-- Registration Form -->
+        <div class="form signup">
+            <!-- Registration Title -->
+            <span class="title">Registration</span>
+
+            <!-- Registration Form Fields -->
+            <form action="#">
+                <!-- Name Input -->
+                <div class="input-field">
+                    <input type="text" placeholder="Enter your name" required>
+                    <i class="material-icons">person</i>
+                </div>
+
+                <!-- Email Input -->
+                <div class="input-field">
+                    <input type="text" placeholder="Enter your email" required>
+                    <i class="material-icons">mail</i>
+                </div>
+
+                <!-- Password Inputs with Show/Hide Icon -->
+                <div class="input-field">
+                    <input type="password" class="password" placeholder="Create a password" required>
+                    <i class="material-icons">lock</i>
+                </div>
+
+                <div class="input-field">
+                    <input type="password" class="password" placeholder="Confirm a password" required>
+                    <i class="material-icons">lock</i>
+                    <i class="material-icons showHidePw">remove_red_eye</i>
+                </div>
+
+                <!-- Terms and Conditions Checkbox -->
+                <div class="checkbox-text">
+                    <div class="checkbox-content">
+                        <input type="checkbox" id="termCon">
+                        <label for="termCon" class="text">I accepted all terms and conditions</label>
+                    </div>
+                </div>
+
+                <!-- Signup Button -->
+                <div class="input-field button">
+                    <input type="button" value="Signup">
+                </div>
+            </form>
+
+            <!-- Login Link for Signup Form -->
+            <div class="login-signup">
+                <span class="text">Already a member?
+                    <a href="#" class="text login-link">Login Now</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript File -->
+<script src="script.js"></script>
+
+<!-- Closing Body and HTML Tags -->
+</body>
+</html>
